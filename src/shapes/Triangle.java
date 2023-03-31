@@ -1,7 +1,13 @@
 package shapes;
 
 public class Triangle extends Shape {
-    private String name;
+    private final String name;
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
     public Triangle() {
         this.name= "Triangle";
     }

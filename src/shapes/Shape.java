@@ -1,9 +1,13 @@
 package shapes;
 
 public class Shape {
-    private String name;
+    private final String name;
     public Shape() {
         this.name = "Shape";
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override

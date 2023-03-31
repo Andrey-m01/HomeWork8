@@ -1,4 +1,5 @@
 import shapes.*;
+import utils.ShapesNameGetter;
 
 public class Test {
 
@@ -11,11 +12,11 @@ public class Test {
         Shape sh4 = new Rhombus();
 
 
-        System.out.println(sh.toString());
-        System.out.println(sh1.toString());
-        System.out.println(sh2.toString());
-        System.out.println(sh3.toString());
-        System.out.println(sh4.toString());
+        System.out.println(sh);
+        System.out.println(sh1);
+        System.out.println(sh2);
+        System.out.println(sh3);
+        System.out.println(sh4);
 
         System.out.println();
 
@@ -30,5 +31,16 @@ public class Test {
             System.out.println(s.toString());
         }
 
+        System.out.println();
+
+        ShapesNameGetter sNG = new ShapesNameGetter(sh);
+
+        System.out.println();
+
+        System.out.println(sNG.toString(sh1));
+
+        System.out.println();
+
+        System.out.println(sNG.toString(shapes));
     }
 }

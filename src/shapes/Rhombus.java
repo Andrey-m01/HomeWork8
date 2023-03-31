@@ -1,9 +1,14 @@
 package shapes;
 
 public class Rhombus extends Shape{
-    private String name;
+    private final String name;
     public Rhombus() {
         this.name = "Rhombus";
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     @Override

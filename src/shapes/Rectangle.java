@@ -1,7 +1,13 @@
 package shapes;
 
 public class Rectangle extends Shape{
-    private String name;
+    private final String name;
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
     public Rectangle() {
         this.name= "Rectangle";
     }

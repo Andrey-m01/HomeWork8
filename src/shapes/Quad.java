@@ -1,9 +1,14 @@
 package shapes;
 
 public class Quad extends Shape{
-    private String name;
+    private final String name;
     public Quad() {
         this.name= "Quad";
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     @Override
